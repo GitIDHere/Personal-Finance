@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.samirvora.myfinance">
+
+    <application
+        android:name="com.samirvora.myfinance.util.ThisApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MaterialTheme"
+        >
+
+        <activity android:name="com.samirvora.myfinance.view.activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Add transaction activity -->
+        <activity android:name="com.samirvora.myfinance.view.activities.AddTransactionActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName="com.samirvora.myfinance.view.activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.samirvora.myfinance.view.activities.MainActivity" />
+        </activity>
+
+        <!-- Edit transaction -->
+        <activity android:name="com.samirvora.myfinance.view.activities.EditTransactionActivity" android:parentActivityName="com.samirvora.myfinance.view.activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.samirvora.myfinance.view.activities.MainActivity" />
+        </activity>
+
+    </application>
+
+</manifest>

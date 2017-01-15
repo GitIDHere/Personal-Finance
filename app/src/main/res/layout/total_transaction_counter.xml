@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/totalTransContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/full_list_padding"
+    android:background="@color/primary"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <!-- INCOME -->
+        <ImageView
+            android:id="@+id/totIncIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_total_income"
+            android:background="@drawable/shape_total_income_background"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/totIncCurSym"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/totIncIcon"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:text="£"/>
+
+        <TextView
+            android:id="@+id/totalMonthInc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/totIncCurSym"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:text="00.00"
+            />
+        <!-- INCOME -->
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/expensePriceContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <!-- EXPENSE -->
+        <ImageView
+            android:id="@+id/totExpIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_total_expense"
+            android:background="@drawable/shape_total_expense_background"
+            android:layout_marginRight="5dp"/>
+
+
+        <TextView
+            android:id="@+id/totExpCurrSym"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/totExpIcon"
+            android:layout_centerVertical="true"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:text="£"/>
+
+        <TextView
+            android:id="@+id/totalMonthExp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/totExpCurrSym"
+            android:layout_centerVertical="true"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:text="00.00"
+            />
+        <!-- EXPENSE -->
+
+    </LinearLayout>
+
+</LinearLayout>

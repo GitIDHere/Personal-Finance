@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/repeatSelectionContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone"
+    >
+
+    <!-- android:visibility="gone" -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/repeatTitle"
+            android:layout_width="wrap_content"
+            android:textAlignment="textEnd"
+            android:gravity="end"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Repeat Period:"
+            android:textSize="17sp"
+            />
+
+        <Spinner
+            android:id="@+id/repeatAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/repeatTitle"
+            android:spinnerMode="dialog"
+            />
+
+        <Spinner
+            android:id="@+id/repeatPeriod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/repeatTitle"
+            android:spinnerMode="dialog"
+            />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <!--END REPEAT-->
+        <TextView
+            android:id="@+id/endRepeatTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:textAlignment="textEnd"
+            android:gravity="end|center_vertical"
+            android:text="End Date: "
+            android:layout_alignBottom="@+id/repeatEndDate"
+            android:textSize="17sp"
+            />
+
+        <Button
+            android:id="@+id/repeatEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:layout_toRightOf="@id/endRepeatTitle"
+            android:text="DD/MM/YYYY"
+            android:textAlignment="textStart"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif"
+            android:gravity="start"
+            android:background="@drawable/apptheme_textfield_activated_holo_dark"
+            />
+        <!--END REPEAT-->
+
+    </RelativeLayout>
+
+
+    <!--<EditText-->
+        <!--android:id="@+id/repeatEndDate"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toRightOf="@id/endRepeatTitle"-->
+        <!--android:textSize="17sp"-->
+        <!--android:fontFamily="sans-serif"-->
+        <!--android:hint="DD/MM/YYYY"-->
+        <!--android:inputType="none"-->
+        <!--/>-->
+
+
+</LinearLayout>
+

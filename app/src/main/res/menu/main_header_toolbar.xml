@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item-->
+        <!--android:id="@+id/viewSQL"-->
+        <!--android:title="Select Date"-->
+        <!--android:icon="@drawable/temp_sql"-->
+        <!--app:showAsAction="always"-->
+        <!--android:visible="true"-->
+        <!--/>-->
+
+    <!--<item-->
+        <!--android:id="@+id/select_date"-->
+        <!--android:title="Select Date"-->
+        <!--android:icon="@drawable/temp_calendar_icon"-->
+        <!--app:showAsAction="always"-->
+        <!--android:visible="true"-->
+        <!--/>-->
+
+    <item
+        android:id="@+id/sortIcon"
+        android:title="Sort"
+        android:icon="@drawable/icon_sort"
+        app:showAsAction="always"
+        android:visible="true"
+        />
+
+    <!--<item-->
+        <!--android:id="@+id/filterIcon"-->
+        <!--android:title="Filter"-->
+        <!--android:icon="@drawable/icon_filter"-->
+        <!--app:showAsAction="always"-->
+        <!--android:visible="true"-->
+        <!--/>-->
+
+    <item
+        android:id="@+id/menu_addTransaction"
+        android:title="Add Transaction"
+        android:icon="@drawable/icon_add_transaction"
+        app:showAsAction="always"
+        android:visible="true"
+        />
+
+
+</menu>

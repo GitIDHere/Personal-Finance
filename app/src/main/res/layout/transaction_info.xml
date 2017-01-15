@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/transactionTypeIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/transactionRadioGroup"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/icon_transaction"/>
+
+        <RadioGroup
+            android:id="@+id/transactionRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@id/transactionTypeIcon"
+            >
+
+            <RadioButton
+                android:id="@+id/expenseRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="Expense"
+                android:textSize="20sp"
+                android:textColor="@color/transaction_type_radio_text_color"
+                />
+
+            <RadioButton
+                android:id="@+id/incomeRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Income"
+                android:textSize="20sp"
+                android:textColor="@color/transaction_type_radio_text_color"
+                />
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <!-- Title -->
+    <RelativeLayout
+        android:id="@+id/titleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/titleIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/titleEditText"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/icon_title"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/titleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/titleIcon"
+            >
+
+            <EditText
+                android:id="@+id/transactionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:fontFamily="sans-serif"
+                android:hint="Title"
+                android:maxLines="1"
+                android:background="@drawable/apptheme_textfield_activated_holo_dark"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </RelativeLayout>
+    <!-- Title -->
+
+
+    <!-- Amount -->
+    <RelativeLayout
+        android:id="@+id/amountContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/titleContainer"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/amountIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/amountEditText"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/icon_pound"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/amountEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/amountIcon"
+            >
+
+            <EditText
+                android:id="@+id/transaction_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:fontFamily="sans-serif"
+                android:hint="Amount"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:background="@drawable/apptheme_textfield_activated_holo_dark"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+    <!-- Amount -->
+
+
+    <!-- Category -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/categoryIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/categoryButton"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/icon_category"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/categoryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/categoryIcon"
+            android:layout_toEndOf="@id/categoryIcon"
+            >
+
+            <EditText
+                android:id="@+id/categoryName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:focusable="false"
+                android:clickable="true"
+                android:fontFamily="sans-serif"
+                android:hint="Category"
+                android:maxLines="1"
+                android:inputType="text"
+                android:background="@drawable/apptheme_textfield_activated_holo_dark"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+    <!-- Category -->
+
+
+
+    <!-- Repeat Transaction -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/repeatTransactionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repeat Transaction"
+            android:layout_marginRight="20dp"
+            android:textSize="19sp"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/repeat_transaction_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/repeatTransactionLabel"
+            android:layout_toEndOf="@id/repeatTransactionLabel"
+            android:theme="@style/RepeatSwitch"
+            android:checked="false"/>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/repeat_view"
+            android:layout_below="@id/repeatTransactionLabel"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

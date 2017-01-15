@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="grey">#B5B5B5</color>
+    <color name="black">#000000</color>
+
+    <color name="transparent">#80FFFFFF</color>
+
+
+    <!-- Custom Radio button -->
+    <color name="radioButtonDisabled">#E0E0E0</color>
+    <color name="radioButtonTextDisabled">#BBBEBF</color>
+    <color name="radioButtonBackground">#EDEDED</color>
+    <color name="transaction_type_radio_text_color">#807F7F</color>
+
+
+
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#1E88E5</color>
+
+
+
+
+    <!--THEME COLOURS -->
+    <color name="primary">#42A5F5</color>
+    <color name="primaryDark">#1E88E5</color>
+
+    <color name="category__listview_background">#F44336</color>
+    <color name="listView">#2196F3</color>
+
+
+    <color name="income_green">#8BC34A</color>
+    <color name="expense_red">#F44336</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="emptyBackground">#E6E6E6</color>
+
+</resources>

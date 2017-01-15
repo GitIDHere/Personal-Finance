@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:focusable = "false"
+    android:focusableInTouchMode="false"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+                <ImageView
+                    android:id="@+id/categoryImage"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:focusable = "false"
+                    android:focusableInTouchMode="false"
+                    />
+
+                <TextView
+                    android:id="@+id/categoryName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_toRightOf="@id/categoryImage"
+                    android:layout_toEndOf="@id/categoryImage"
+                    android:text="Category Name"
+                    android:focusable = "false"
+                    android:textSize="14sp"
+                    android:focusableInTouchMode="false"
+                    />
+
+                <RadioButton
+                    android:id="@+id/categoryRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:focusable = "false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="false"
+                    />
+
+        </RelativeLayout>
+
+</LinearLayout>

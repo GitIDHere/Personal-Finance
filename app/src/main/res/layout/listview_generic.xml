@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    >
+
+    <!-- CATEGORY IMAGE -->
+    <LinearLayout
+        android:id="@+id/categoryContainer"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+
+        android:gravity="left"
+        android:orientation="vertical"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageView
+            android:id="@+id/categoryIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_category_health"
+            android:background="@drawable/shape_list_category_expense_background"
+            />
+
+        <TextView
+            android:id="@+id/categoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_below="@+id/categoryIcon"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:text="Entertainment" />
+
+    </LinearLayout>
+    <!-- CATEGORY IMAGE -->
+
+
+    <RelativeLayout
+        android:id="@+id/transactInfoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/categoryContainer"
+        >
+
+        <!-- TITLE  -->
+        <TextView
+            android:id="@+id/listTransactTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:layout_alignParentLeft="true"
+
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:singleLine="false"
+            android:fontFamily="sans-serif"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="Item title"
+            />
+        <!-- TITLE -->
+
+
+
+        <RelativeLayout
+            android:id="@+id/priceContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            >
+
+            <!-- MONEY -->
+            <TextView
+                android:id="@+id/moneySymbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="£"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-light"/>
+
+            <TextView
+                android:id="@+id/listTransactAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:layout_toRightOf="@id/moneySymbol"
+                android:text="0.00"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-light"/>
+            <!-- MONEY -->
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/priceContainer"
+            android:layout_toEndOf="@id/priceContainer"
+            android:gravity="end|center_vertical"
+            >
+
+            <!-- ENDS -->
+            <TextView
+                android:id="@+id/repeatEndDateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:text="Ends: "
+                android:layout_marginRight="5dp"
+                />
+
+            <TextView
+                android:id="@+id/repeatEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:layout_toRightOf="@id/repeatEndDateLabel"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:text="02/02/2016"
+                />
+            <!-- ENDS -->
+
+            <ImageView
+                android:id="@+id/repeatIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/repeatEndDate"
+                android:src="@drawable/icon_repeat"
+                />
+            <!-- REPEAT ICON -->
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

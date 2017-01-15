@@ -1,0 +1,107 @@
+<resources>
+
+    <string name="app_name">My Finance</string>
+
+    <!-- REPEAT STRINGS -->
+    <string-array name="repeat_amount">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string-array name="repeat_period">
+        <item>Day(s)</item>
+        <item>Week(s)</item>
+        <item>Month(s)</item>
+        <item>Year(s)</item>
+    </string-array>
+
+    <string name="period_days">Day(s)</string>
+    <string name="period_weeks">Week(s)</string>
+    <string name="period_month">Month(s)</string>
+    <string name="period_year">Year(s)</string>
+    <!-- REPEAT STRINGS -->
+
+
+    <string-array name="sort_options">
+        <item>Days</item>
+        <item>Weeks</item>
+        <item>Months</item>
+        <item>Years</item>
+    </string-array>
+
+    <string-array name="filter_options">
+        <item>None</item>
+        <item>Categories</item>
+        <item>Expense</item>
+        <item>Income</item>
+        <item>Repeats</item>
+        <item>Non-Repeats</item>
+    </string-array>
+
+    <string name="select_category_dialog_title">Select a category</string>
+    <string name="select_category_positive">Select</string>
+    <string name="select_category_negative">Cancel</string>
+
+    <string name="listview_repeat_end">Ends: </string>
+    
+    
+    
+    
+    
+    <string name="sortDateDesc">Date Desc</string>
+    <string name="sortDateAsc">Date Asc</string>
+    <string name="sortPriceAsc">Price Asc</string>
+    <string name="sortPriceDesc">Price Desc</string>
+    <string name="sortAlphaDesc">A-Z Asc</string>
+    <string name="sortAlphaAsc">Z-A Desc</string>
+
+
+
+    
+    <string name="deleteAlertTitle">Delete Transaction?</string>
+    <string name="deleteAlertMsg">Are you sure you want to delete this transaction?</string>
+    <string name="deleteAlertPos">Yes</string>
+    <string name="deleteAlertNeg">No</string>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</resources>
